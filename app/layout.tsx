@@ -6,11 +6,14 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 
+import {getTzmDescription} from '@/components/constants'
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
-  description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-  metadataBase: new URL("https://precedent.dev"),
+  title: {
+    template:  "%s | TZM Community",
+    default: 'Home',
+  },
+  description: getTzmDescription(),
+  metadataBase: new URL("https://tzm.community"),
 };
 
 export default async function RootLayout({

@@ -39,15 +39,15 @@ const NavigationMenu = () => {
                                 </RadixNavigation.Link>
                             </li>
 
-                            <ListItem href="https://stitches.dev/" title="Stitches">
-                                CSS-in-JS with best-in-class developer experience.
-                            </ListItem>
-                            <ListItem href="/colors" title="Colors">
-                                Beautiful, thought-out palettes with auto dark mode.
-                            </ListItem>
-                            <ListItem href="https://icons.radix-ui.com/" title="Icons">
-                                A crisp set of 15x15 icons, balanced and consistent.
-                            </ListItem>
+                            {/*<ListItem href="https://stitches.dev/" title="Stitches">*/}
+                            {/*    CSS-in-JS with best-in-class developer experience.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem href="/colors" title="Colors">*/}
+                            {/*    Beautiful, thought-out palettes with auto dark mode.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem href="https://icons.radix-ui.com/" title="Icons">*/}
+                            {/*    A crisp set of 15x15 icons, balanced and consistent.*/}
+                            {/*</ListItem>*/}
                         </ul>
                     </RadixNavigation.Content>
                 </RadixNavigation.Item>
@@ -62,24 +62,24 @@ const NavigationMenu = () => {
                     </RadixNavigation.Trigger>
                     <RadixNavigation.Content className="absolute top-0 left-0 w-full sm:w-auto">
                         <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[600px] sm:grid-flow-col sm:grid-rows-3">
-                            <ListItem title="Introduction" href="/primitives/docs/overview/introduction">
-                                Build high-quality, accessible design systems and web apps.
-                            </ListItem>
-                            <ListItem title="Getting started" href="/primitives/docs/overview/getting-started">
-                                A quick tutorial to get you up and running with Radix Primitives.
-                            </ListItem>
-                            <ListItem title="Styling" href="/primitives/docs/guides/styling">
-                                Unstyled and compatible with any styling solution.
-                            </ListItem>
-                            <ListItem title="Animation" href="/primitives/docs/guides/animation">
-                                Use CSS keyframes or any animation library of your choice.
-                            </ListItem>
-                            <ListItem title="Accessibility" href="/primitives/docs/overview/accessibility">
-                                Tested in a range of browsers and assistive technologies.
-                            </ListItem>
-                            <ListItem title="Releases" href="/primitives/docs/overview/releases">
-                                Radix Primitives releases and their changelogs.
-                            </ListItem>
+                            {/*<ListItem title="Introduction" href="/primitives/docs/overview/introduction">*/}
+                            {/*    Build high-quality, accessible design systems and web apps.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem title="Getting started" href="/primitives/docs/overview/getting-started">*/}
+                            {/*    A quick tutorial to get you up and running with Radix Primitives.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem title="Styling" href="/primitives/docs/guides/styling">*/}
+                            {/*    Unstyled and compatible with any styling solution.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem title="Animation" href="/primitives/docs/guides/animation">*/}
+                            {/*    Use CSS keyframes or any animation library of your choice.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem title="Accessibility" href="/primitives/docs/overview/accessibility">*/}
+                            {/*    Tested in a range of browsers and assistive technologies.*/}
+                            {/*</ListItem>*/}
+                            {/*<ListItem title="Releases" href="/primitives/docs/overview/releases">*/}
+                            {/*    Radix Primitives releases and their changelogs.*/}
+                            {/*</ListItem>*/}
                         </ul>
                     </RadixNavigation.Content>
                 </RadixNavigation.Item>
@@ -105,22 +105,22 @@ const NavigationMenu = () => {
     );
 };
 
-const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
-    <li>
-        <RadixNavigation.Link asChild>
-            <a
-                className={classNames(
-                    'focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-mauve3 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors',
-                    className
-                )}
-                {...props}
-                ref={forwardedRef}
-            >
-                <div className="text-violet12 mb-[5px] font-medium leading-[1.2]">{title}</div>
-                <p className="text-mauve11 leading-[1.4]">{children}</p>
-            </a>
-        </RadixNavigation.Link>
-    </li>
-));
+// const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
+//     <li>
+//         <RadixNavigation.Link asChild>
+//             <a
+//                 className={classNames(
+//                     'focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-mauve3 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors',
+//                     className
+//                 )}
+//                 {...props}
+//                 ref={forwardedRef}
+//             >
+//                 <div className="text-violet12 mb-[5px] font-medium leading-[1.2]">{title}</div>
+//                 <p className="text-mauve11 leading-[1.4]">{children}</p>
+//             </a>
+//         </RadixNavigation.Link>
+//     </li>
+// ));
 
 export default NavigationMenu;
